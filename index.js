@@ -5,13 +5,12 @@ var BufferCache = function (encoding) {
 
 BufferCache.prototype.set = function (key, data) {
   var json = JSON.stringify(data);
-  if(data)
   this.obj[key] = new Buffer(json, this.encoding);
 }
 
 BufferCache.prototype.get = function (key) {
   var buf = this.obj[key];
-  if(buf===undefined) return undefined;
+  if(buf === undefined) return undefined;
   return JSON.parse(buf);
 }
 
