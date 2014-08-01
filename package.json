@@ -1,0 +1,27 @@
+{
+  "name": "buffer-cache",
+  "version": "0.0.1",
+  "description": "buffer cache for Node",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cuebyte/buffer-cache.git"
+  },
+  "keywords": [
+    "buffer",
+    "node",
+    "cache"
+  ],
+  "author": "QB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cuebyte/buffer-cache/issues"
+  },
+  "homepage": "https://github.com/cuebyte/buffer-cache"
+}
