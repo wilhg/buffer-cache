@@ -1,4 +1,8 @@
-var BufferCache = function (encoding) {
+exports = module.exports = BufferCache;
+
+function BufferCache(encoding) {
+  if(!(this instanceof BufferCache)) return new BufferCache;
+  
   this.obj = {};
   this.encoding = encoding || 'utf-8';
 }
@@ -17,5 +21,3 @@ BufferCache.prototype.get = function (key) {
 BufferCache.prototype.delete = function (key) {
   this.obj[key] = undefined;
 }
-
-module.exports = BufferCache;

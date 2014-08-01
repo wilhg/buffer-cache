@@ -1,5 +1,4 @@
-var BufferCache = require('../index');
-var bc = new BufferCache();
+var bc = require('../index')();
 
 bc.set('number', 233);
 console.log(bc.get('number'));
