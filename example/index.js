@@ -20,10 +20,11 @@ console.log(bc.get('object'));
 bc.set('array', [{a:1, b:2}, {c:4}]);
 console.log(bc.type('array'));
 console.log(bc.get('array'));
-bc.modify('array', function (data) {
-  data[0]='0';
+bc.arrayTrick('array1', function (data) {
+  //if (data) data = [];
+  data[0]=0;
 });
-console.log(bc.get('array'));
+console.log(bc.get('array1'));
 
 bc.delete('object');
 console.log(bc.get('object'));

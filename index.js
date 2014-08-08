@@ -49,9 +49,13 @@ BufferCache.prototype.update = function (key, input, callback) {
   }
 }
 
-BufferCache.prototype.modify = function (key, callback) {
+BufferCache.prototype.arrayTrick = function (key, callback) {
   var result = this.get(key);
+  if (result === undefined) {
+    result = [];
+  }
   callback(result);
+  //console.log(getType(result));
   this.set(key, result);
   return result;
 }
