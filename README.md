@@ -7,4 +7,4 @@ support type: `Number`, `String`, `Object`, `Array`.
 
 
 ##Usage
-The usage is quite simple. Please go to view `example/index.js` :)
+The usage is quite simple. Please go to view `example/index.js` and `index.js`. :)
